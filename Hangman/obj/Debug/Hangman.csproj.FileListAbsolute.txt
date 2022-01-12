@@ -1,0 +1,6 @@
+/Users/macbook/Documents/GitHub/Hangman/Hangman/Hangman/obj/Debug/Hangman.csproj.AssemblyReference.cache
+/Users/macbook/Documents/GitHub/Hangman/Hangman/Hangman/obj/Debug/Hangman.csproj.CoreCompileInputs.cache
+/Users/macbook/Documents/GitHub/Hangman/Hangman/Hangman/bin/Debug/Hangman.exe
+/Users/macbook/Documents/GitHub/Hangman/Hangman/Hangman/bin/Debug/Hangman.pdb
+/Users/macbook/Documents/GitHub/Hangman/Hangman/Hangman/obj/Debug/Hangman.exe
+/Users/macbook/Documents/GitHub/Hangman/Hangman/Hangman/obj/Debug/Hangman.pdb
