@@ -9,58 +9,60 @@ namespace Hangman
         {
             Console.WriteLine("Hangman - Finde das geheime Wort \n");
 
-            //kaynak, rastgele secim, atama
+            //Wortliste wählen, schreiben, ausdrucken
             string[] woerterliste = File.ReadAllLines("/Users/macbook/Documents/GitHub/Hangman/Wortliste.txt");
             Random zufallzahlen = new Random();
             string gewaehtewort = woerterliste[zufallzahlen.Next(0, woerterliste.Length)];
             //Console.WriteLine(secilenkelime); rastgele kelimeyi gösterir
 
 
-            //secilen kelime kadar _ olusturma
+            // _ generieren
             char[] charakter = new char[gewaehtewort.Length];
             for (int i = 0; i < charakter.Length; i++)
             {
                 charakter[i] = '_';
             }
 
-            //Asil isleri olusturacagimiz döngü
+            //MAIN PROGRAMMIEREN
             do
             {
                 bool kol = false;
 
-                //karakteri ekrana yazdirma
+                //Sehen von Charakter
                 foreach (var item in charakter)
                 {
                     Console.Write(item + " ");
                 }
 
-                //ekrandan girdi isteme
+                //Buchstaben schreiben
                 Console.WriteLine();
-                Console.Write("Bitte ein Buchstaben eingeben : ");
+                char buchstaben = char.Parse(Console.ReadLine());  //char buchstaben = char.Parse(Console.ReadLine().ToUpper()); kücük veya büyük harf farketmez to upper ile
 
-                char buchstaben = char.Parse(Console.ReadLine());  //char harf = char.Parse(Console.ReadLine().ToUpper()); kücük veya büyük harf farketmez to upper ile
 
                 //Girilen harf ile secilen kelimeyi kontrol etmek ve karakterin elemani ile degistirmek
                 for (int i = 0; i < gewaehtewort.Length; i++)
                 {
                     if (buchstaben == gewaehtewort[i])
-                    {
+                    { 
                         charakter[i] = buchstaben;
                         kol = true;
                     }
                 }
+               
+                
 
+                //Klein Groß Schreiben
                 if (buchstaben >= 'a' && buchstaben <= 'z')
                 {
                     Console.WriteLine("Bitte Großbuchstabe eingeben : " + buchstaben);
                     Console.WriteLine("ungültige Eingabe");
                     Console.WriteLine();
-                    if (gewaehtewort.Length == charakter.Length)
-                    {
-                        Console.WriteLine("Mit "+ ""+"Fehlerversuchen gefunden");
-                    }
                 }
-
+                else
+                {
+                    Console.WriteLine("Bitte Großbuchstabe eingeben : " + buchstaben);
+                    Console.WriteLine();
+                }
                 
 
                 /*
@@ -76,6 +78,8 @@ namespace Hangman
                 Console.WriteLine("Punkte Status" + punkte);
                 */
             } while (true);
+            
+
             Console.ReadKey();
         }
     }
