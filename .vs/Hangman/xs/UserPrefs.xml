@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{EEC2BF86-DD04-49FF-BCAA-7A4B649D4DB2}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Hangman/Program.cs">
     <Files>
-      <File FileName="Hangman/Program.cs" Line="1" Column="1" />
+      <File FileName="Hangman/Program.cs" Line="52" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Hangman" expanded="True">
             <Node name="Hangman" expanded="True">
-              <Node name="EmptyClass.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
