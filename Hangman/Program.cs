@@ -36,10 +36,11 @@ namespace Hangman
                 }
                 Console.WriteLine();
 
+
                 //Buchstaben schreiben
                 char buchstaben = char.Parse(Console.ReadLine());  //char buchstaben = char.Parse(Console.ReadLine().ToUpper()); kücük veya büyük harf farketmez to upper ile
 
-                //Girilen harf ile secilen kelimeyi kontrol etmek ve karakterin elemani ile degistirmek
+                //Das ausgewählte Wort mit dem eingegebenen Buchstaben überprüfen und durch das Element des Zeichens ersetzen
                 for (int i = 0; i < gewaehtewort.Length; i++)
                 {
                     if (buchstaben == gewaehtewort[i])
